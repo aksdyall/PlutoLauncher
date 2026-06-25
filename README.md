@@ -56,7 +56,7 @@ If you want to be able to launch Pluto like an app from the menu:
 
 1. Install Julia by running `curl -fsSL https://install.julialang.org | sh` in your terminal, or according to the latest instructions on their website
 2. Download the *.PlutoLauncher* folder and place it in your home directory. Since it starts with a dot it will be a hidden directory, so you can use Ctrl+h to view hidden files and be able to see it.
-3. Go into the *.PlutoLauncher* folder and edit the directory string to the working folder you want Pluto to launch in. By default, it's ~/Documents.
+3. Go into the *.PlutoLauncher* folder, open *PlutoLauncherDE.sh* in a text editor, and edit the directory string to the working folder you want Pluto to launch in. By default, it's ~/Documents.
 4. Open the terminal in the *.PlutoLauncher* folder and run `chmod +x PlutoLauncherDE.sh` to make the file executable
 5. Right click on the KDE Menu Icon (usually a K at the beginning of the taskbar)
 6. Click *Edit Applications*
