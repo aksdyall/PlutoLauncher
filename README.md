@@ -17,6 +17,7 @@ A couple notes on usage:
 1. Install Julia from the Microsoft Store or using the installer from their [website](https://julialang.org/downloads/)
 2. Download *PlutoLauncher.ps1* and *PlutoLauncher.jl*
 3. Put both files in the folder you want to launch Pluto in
+4. Open PowerShell as administrator and run Set-ExecutionPolicy RemoteSigned to allow yourself to run scripts.
 
 **Starting Pluto**
 
@@ -62,7 +63,7 @@ If you want to be able to launch Pluto like an app from the menu:
 6. Click *Edit Applications*
 7. Go to *New*, then *New Item*
 8. Name the item something sensible, like Pluto Launcher
-9. Put the absolute path to *PlutoLauncherDE.sh* (inside *.PlutoLauncher*) under Program. It should look like /home/your_username/.PlutoLauncher/PlutoLauncherDE.sh
+9. Put the absolute path to *PlutoLauncherDE.sh* (inside *.PlutoLauncher*) under Program. It should look something like /home/your_username/.PlutoLauncher/PlutoLauncherDE.sh
 10. Click the pencil icon to the right of the name field to add an icon. Click browse in the bottom left, and choose pluto_icon.svg in ~/.PlutoLauncher
 11. Go to advanced, and check *Run in terminal*
 12. Hit Save, then close the KDE Menu Editor
