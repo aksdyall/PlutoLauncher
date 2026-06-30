@@ -1,6 +1,6 @@
 # PlutoLauncher
 
-*Revised 2026-06-24*
+*Revised 2026-06-30*
 
 A couple convenience scripts to more easily launch [Pluto](https://plutojl.org/), which is a reactive notebook environment for [Julia](https://julialang.org/).
 
@@ -8,7 +8,7 @@ These scripts will make sure Julia is up to date, make sure Pluto is installed a
 
 A couple notes on usage:
 - Pluto will take longer to launch the first time, and whenever there is a julia update, due to the time taken to download and install packages. Give it a minute or so and it'll launch.
-- Pluto will stay open even when your browser window is closed. To stop Pluto and free up resources, go to the terminal window and hit Ctrl+c, wait for the prompt to appear, then close the window.
+- Pluto will stay open even when your browser window is closed. To stop Pluto and free up resources, go to the terminal or powershell window and hit Ctrl+c, wait for the prompt to appear, then close the window.
 
 ## For Windows Users
 
@@ -55,15 +55,17 @@ If you want to be able to launch Pluto like an app from the menu:
 **Installation**
 
 1. Install Julia by running `curl -fsSL https://install.julialang.org | sh` in your terminal, or according to the latest instructions on their website
-2. Download the *.PlutoLauncher* folder and place it in your home directory. Since it starts with a dot it will be a hidden directory, so you can use Ctrl+h to view hidden files and be able to see it.
-3. Go into the *.PlutoLauncher* folder, open *PlutoLauncherDE.sh* in a text editor, and edit the directory string to the working folder you want Pluto to launch in. By default, it's ~/Documents.
+2. Download a zip of the repository, extract it, and move the *.PlutoLauncher* folder to your home directory. Since it starts with a dot it will be a hidden directory, so you can use Ctrl+h to view hidden files, so you can see it and move it around
+3. Go into the *.PlutoLauncher* folder, open *PlutoLauncherDE.jl* in a text editor, and edit the string assigned to launch_directory to the working folder you want Pluto to launch in. By default, it's ~/Documents
 4. Open the terminal in the *.PlutoLauncher* folder and run `chmod +x PlutoLauncherDE.sh` to make the file executable
-5. Right click on the KDE Menu Icon (usually a K at the beginning of the taskbar)
+5. Right click on the KDE Application Launcher Icon (usually a K, or an icon for your linux distro, at the beginning of the taskbar)
 6. Click *Edit Applications*
 7. Go to *New*, then *New Item*
-8. Name the item something sensible, like Pluto Launcher.
+8. Name the item something sensible, like Pluto Launcher
 9. Put the absolute path to *PlutoLauncherDE.sh* (inside *.PlutoLauncher*) under Program. It should look like /home/your_username/.PlutoLauncher/PlutoLauncherDE.sh
-10. Go to advanced, and check *Run in terminal*
-11. Hit Save, and close the KDE Menu Editor
+10. Click the pencil icon to the right of the name field to add an icon. Click browse in the bottom left, and choose pluto_icon.svg in ~/.PlutoLauncher
+11. Go to advanced, and check *Run in terminal*
+12. Hit Save, and close the KDE Menu Editor
+13. Restart your computer so the KDE Menu can update properly.
 
 These steps are given for KDE. If you use a different desktop environment, you can use the same files, but the steps to create a menu entry for the Pluto Launcher will be different.
