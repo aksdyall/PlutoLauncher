@@ -16,6 +16,7 @@ if pluto_is_installed
 else
     Pkg.add("Pluto")
 end
+cd(expanduser(launch_directory))
 using Pluto
 Pluto.run()
 
