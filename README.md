@@ -4,7 +4,7 @@
 
 A couple convenience scripts to more easily launch [Pluto](https://plutojl.org/), which is a reactive notebook environment for [Julia](https://julialang.org/).
 
-These scripts will make sure Julia is up to date, make sure Pluto is installed and up to date, then launch Pluto in the same folder the scripts are in.
+These scripts will make sure Julia is up to date, make sure Pluto is installed and up to date, then launch Pluto in the same folder the scripts are in. (Or in the folder specified in the script, see KDE Integration on Linux).
 
 A couple notes on usage:
 - Pluto will take longer to launch the first time, and whenever there is a julia update, due to the time taken to download and install packages. Give it a minute or so and it'll launch.
